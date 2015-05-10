@@ -5,6 +5,8 @@ git config --global color.ui true
 cp gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
+git config --global push.default simple
+
 if [ $# -eq 2 ]; then
     echo Got two arguments, setting user name and email to $1 and $2...
     git config --global user.name "$1"
